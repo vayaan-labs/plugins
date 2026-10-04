@@ -1,12 +1,30 @@
 {
   "name": "vayaan-labs",
-  "owner": { "name": "Vayaan Labs" },
-  "metadata": { "description": "Claude Code plugins and mods by Vayaan Labs" },
+  "owner": {
+    "name": "Vayaan Labs"
+  },
+  "metadata": {
+    "description": "Claude Code plugins and mods by Vayaan Labs"
+  },
   "plugins": [
     {
       "name": "cache-maxxer",
-      "source": { "source": "github", "repo": "vayaan-labs/cache-maxxer" },
-      "description": "Shows the prompt cache's countdown and hit rate above the prompt, explains every cache break, and can keep the cache warm on purpose"
+      "source": {
+        "source": "github",
+        "repo": "vayaan-labs/cache-maxxer"
+      },
+      "description": "Shows the prompt cache's countdown and hit rate above the input box, explains every cache break and cache expiry, and can keep the cache warm to cut Claude Code cost",
+      "license": "MIT",
+      "homepage": "https://github.com/vayaan-labs/cache-maxxer",
+      "keywords": [
+        "prompt cache",
+        "cache hit rate",
+        "claude code cost",
+        "cache expiry",
+        "keep warm",
+        "statusline",
+        "token usage"
+      ]
     }
   ]
 }
