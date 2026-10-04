@@ -4,7 +4,7 @@
 
 This is a plugin marketplace: a list that Claude Code reads so you can install plugins by name instead of hunting for each repository. Add it once, then install what you want from it. Today it carries Cache Maxxer, a plugin that shows your Claude Code prompt cache above the input box, explains every cache break and cache expiry, and can keep the cache warm to cut Claude Code cost.
 
-![The Cache Maxxer band above the input box in a terminal: a green countdown at 59:46 with a track, a 100% hit rate on the last request and 92% over the session, 38K tokens of context, 138K read and 12K written, about $0.23 saved, and the buttons Keep warm, Warm now and Details.](assets/band.png)
+![The Cache Maxxer band above the input box in a terminal: a green countdown at 58:53 with a track, a 100% hit rate on the last request and 89% over the session, 38K tokens of context, 67K read and 8.4K written, about $0.10 saved, and the buttons Keep warm: on, Warm now and Details.](assets/band.png)
 
 ## Plugins
 
