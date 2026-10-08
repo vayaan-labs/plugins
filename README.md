@@ -1,51 +1,70 @@
-# Vayaan Labs plugins
+<p align="center">
+  <img src="assets/logo.svg" width="128" height="128" alt="Vayaan Labs logo">
+</p>
 
-**Add one catalogue to Claude Code and get every Vayaan Labs plugin, kept in sync.**
+<h1 align="center">Vayaan Labs plugins</h1>
 
-This is a plugin marketplace: a list that Claude Code reads so you can install plugins by name instead of hunting for each repository. Add it once, then install what you want from it. Today it carries Cache Maxxer, a plugin that shows your Claude Code prompt cache above the input box, explains every cache break and cache expiry, and can keep the cache warm to cut Claude Code cost.
+<p align="center"><b>A Claude Code plugin marketplace: add it once, then install any Vayaan Labs plugin by name and keep it updated.</b></p>
 
-![The Cache Maxxer band above the input box in a terminal: a green countdown at 58:53 with a track, a 100% hit rate on the last request and 89% over the session, 38K tokens of context, 67K read and 8.4K written, about $0.10 saved, and the buttons Keep warm: on, Warm now and Details.](assets/band.png)
+<p align="center">
+  <a href="#get-started">Add the catalogue</a> · <a href="#plugins">Plugins</a> · <a href="https://github.com/vayaan-labs/claude-plugins/issues">Report a bug</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Claude_Code-2.1.289+-d97757?style=flat-square" alt="Claude Code 2.1.289 or later">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/vayaan-labs/claude-plugins?style=flat-square" alt="MIT licence"></a>
+  <a href="https://github.com/vayaan-labs/claude-plugins/stargazers"><img src="https://img.shields.io/github/stars/vayaan-labs/claude-plugins?style=flat-square" alt="GitHub stars"></a>
+</p>
+
+A marketplace is a list Claude Code reads so you can install plugins by name instead of hunting down each repository. This one carries the Claude Code plugins Vayaan Labs makes.
 
 ## Plugins
 
-| Plugin | What it does |
-|---|---|
-| [Cache Maxxer](https://github.com/vayaan-labs/cache-maxxer) | Shows the prompt cache's countdown and hit rate above the input box, explains every cache break and cache expiry, and can keep the cache warm to cut Claude Code cost. Install it as `cache-maxxer@vayaan-labs`. |
+| Plugin | What it does | Install |
+| --- | --- | --- |
+| [Cache Maxxer](https://github.com/vayaan-labs/cache-maxxer) | Shows your prompt cache's countdown and hit rate above the input box, explains every cache break, and can keep the cache warm so you stop paying to rebuild it. | `cache-maxxer@vayaan-labs` |
+
+<p align="center">
+  <img src="assets/band.png" alt="The Cache Maxxer band in a terminal: a green countdown at 59:47 beside a bar that drains, 1 hour cache, hit 95.33% last request and 68.19% this session, and the buttons Keep warm: off, Warm now and More.">
+</p>
+<p align="center"><i>Cache Maxxer in a terminal.</i></p>
 
 ## Get started
 
-1. **Add the catalogue.** In the Claude desktop app, open the Directory, choose Plugins, press the + button at the top right and choose Add marketplace, then Add from a repository ("Sync a plugin marketplace from a GitHub repository or Git URL"). Enter `vayaan-labs/claude-plugins`, or the full link `https://github.com/vayaan-labs/claude-plugins`.
+1. **Add the catalogue.** In the Claude desktop app, open the Directory, choose Plugins, press + and choose Add marketplace, then Add from a repository, and enter `vayaan-labs/claude-plugins`.
 
    ![The Add marketplace dialog in the Claude desktop app, with two choices: Browse Anthropic sources, and Add from a repository, which syncs a plugin marketplace from a GitHub repository or Git URL.](assets/add-marketplace.png)
 
-   In a terminal, run `claude plugin marketplace add vayaan-labs/claude-plugins` instead.
+   In a terminal:
 
-2. **Install a plugin.** In the Desktop app, find the plugin in the Vayaan Labs catalogue and install it. In a terminal, run `claude plugin install cache-maxxer@vayaan-labs`, using the plugin's name from the table above.
+   ```
+   claude plugin marketplace add vayaan-labs/claude-plugins
+   ```
 
-3. **Use it.** If Claude Code was already open when you installed, run `/reload-plugins` in that session, or start a new one. Each plugin's own page says what to expect.
+2. **Install a plugin.** Find it in the Vayaan Labs catalogue and install it, or in a terminal use its name from the table:
 
-Tested with Claude Code 2.1.289 on macOS, in the terminal. The Desktop app route follows the app's own labels but has not been run by us yet.
+   ```
+   claude plugin install cache-maxxer@vayaan-labs
+   ```
 
-## Updates
+3. **Use it.** If Claude Code was already open, run `/reload-plugins` first. Each plugin's own page says what to expect.
 
-Run `claude plugin marketplace update vayaan-labs` to pull the latest catalogue, then `claude plugin update cache-maxxer@vayaan-labs` for a plugin, and restart Claude Code to apply it.
-
-## Removing things
-
-To remove a plugin, run `claude plugin uninstall cache-maxxer@vayaan-labs`. To remove the whole catalogue, run `claude plugin marketplace remove vayaan-labs`.
+Update with `claude plugin marketplace update vayaan-labs`, then `claude plugin update <plugin>@vayaan-labs`, and restart Claude Code. Remove a plugin with `claude plugin uninstall <plugin>@vayaan-labs`, or the whole catalogue with `claude plugin marketplace remove vayaan-labs`.
 
 ## Privacy
 
-The catalogue is a single file, `.claude-plugin/marketplace.json`, that names each plugin and where its code lives on GitHub. It has no server and runs nothing. Claude Code fetches it from GitHub when you add or update the catalogue, and fetches a plugin's repository from GitHub when you install it. What a plugin does once installed is described on that plugin's own page; for Cache Maxxer, see its Privacy section.
+The catalogue is one file, `.claude-plugin/marketplace.json`, naming each plugin and the GitHub repository its code lives in. It has no server and runs nothing. Claude Code fetches it from GitHub when you add or update the catalogue, and fetches a plugin's repository when you install it. What a plugin does once installed is on its own page.
 
-## Get help
+## Contributing
 
-Open an issue at https://github.com/vayaan-labs/claude-plugins/issues. To report a security problem privately, see [SECURITY.md](SECURITY.md).
-
-## Checking the catalogue
+Found a problem with the catalogue? Open an issue. A problem with a plugin belongs in that plugin's own repository. Check a change to the catalogue with:
 
 ```
 claude plugin validate --strict .claude-plugin/marketplace.json
 ```
 
-MIT licensed. Built by @YaanFPV.
+To report a security problem privately, see [SECURITY.md](SECURITY.md).
+
+## Licence
+
+MIT. Built by [@YaanFPV](https://github.com/yaanfpv).
