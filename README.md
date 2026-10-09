@@ -23,12 +23,17 @@ This catalogue is a list your coding agent reads so you can install our plugins 
 
 | Plugin | What it does | Runs in | Install |
 | --- | --- | --- | --- |
-| [Cache Maxxer](https://github.com/vayaan-labs/cache-maxxer) | Shows how long Claude Code's prompt cache has left and how much of each request came from it, explains every rebuild, and can keep the cache alive while you step away. | Claude Code on macOS, terminal and desktop app | `cache-maxxer@vayaan-labs` |
+| [Cache Maxxer](https://github.com/vayaan-labs/cache-maxxer) | Keeps your cache warm, so you pay 96% less to re-read your conversation. Shows the time left on the cache and your hit rate, and explains every rebuild. | Claude Code, terminal and desktop app | `cache-maxxer@vayaan-labs` |
+
+<p align="center">
+  <img src="assets/band-desktop.png" alt="Cache Maxxer in the Claude desktop app: a large 58:08 countdown over a draining bar, a one-hour cache, hit rates of 99.91% and 99.58% with rings, and the Keep warm, Warm now, More and Hide buttons.">
+</p>
+<p align="center"><i>Cache Maxxer in the Claude desktop app.</i></p>
 
 <p align="center">
   <img src="assets/band.png" alt="Cache Maxxer in a terminal: a 59:47 countdown with a draining bar, a one-hour cache, hit rates of 95.33% and 68.19%, and the Keep warm, Warm now and More buttons.">
 </p>
-<p align="center"><i>Cache Maxxer in a terminal.</i></p>
+<p align="center"><i>And in a terminal.</i></p>
 
 ## Get started
 
@@ -59,10 +64,29 @@ Run this command:
 claude plugin marketplace add vayaan-labs/plugins
 Check that `claude plugin marketplace list`
 shows vayaan-labs, then tell me which plugins
-it offers.
+it offers. After I choose a plugin, install it
+and tell me to run /reload-plugins.
 ```
 
-Update with `claude plugin marketplace update vayaan-labs`, then `claude plugin update <plugin>@vayaan-labs`, and restart Claude Code. Remove a plugin with `claude plugin uninstall <plugin>@vayaan-labs`, or the whole catalogue with `claude plugin marketplace remove vayaan-labs`.
+Update with `claude plugin marketplace update vayaan-labs`, then `claude plugin update <plugin>@vayaan-labs`, and run `/reload-plugins`, or tell your agent:
+
+```
+Update the vayaan-labs marketplace and every
+plugin I installed from it, then tell me to
+run /reload-plugins.
+```
+
+Remove a plugin with `claude plugin uninstall <plugin>@vayaan-labs`, or the whole catalogue with `claude plugin marketplace remove vayaan-labs`, or tell your agent:
+
+```
+Uninstall <plugin name>, then tell me to run
+/reload-plugins.
+```
+
+```
+Remove the vayaan-labs marketplace, then tell
+me to run /reload-plugins.
+```
 
 ## Privacy
 
