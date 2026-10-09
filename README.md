@@ -50,6 +50,17 @@ This catalogue is a list Claude Code reads so you can install our plugins by nam
 
 3. **Reload if needed.** If Claude Code was already open, run `/reload-plugins`. Each plugin's page, linked in the table, says what to look for.
 
+Or paste this prompt to your agent:
+
+```
+Add the Vayaan Labs plugin catalogue to Claude Code
+(https://github.com/vayaan-labs/claude-plugins).
+Run this command:
+claude plugin marketplace add vayaan-labs/claude-plugins
+Check that `claude plugin marketplace list` shows vayaan-labs,
+then tell me which plugins it offers.
+```
+
 Update with `claude plugin marketplace update vayaan-labs`, then `claude plugin update <plugin>@vayaan-labs`, and restart Claude Code. Remove a plugin with `claude plugin uninstall <plugin>@vayaan-labs`, or the whole catalogue with `claude plugin marketplace remove vayaan-labs`.
 
 ## Privacy
