@@ -45,17 +45,25 @@ This catalogue is a list your coding agent reads so you can install our plugins 
 
 ## Get started
 
-1. **Add the catalogue.** In the Claude desktop app, open the Directory, choose Plugins, press + and choose Add marketplace, then Add from a repository, and enter `vayaan-labs/plugins`.
+### In the Claude desktop app
+
+1. **Add the catalogue.** Open the Directory, choose Plugins, press + and choose Add marketplace, then Add from a repository, and enter `vayaan-labs/plugins`.
 
    <img src="assets/add-marketplace.png" width="100%" alt="The Add marketplace dialog in the Claude desktop app, with two choices: Browse Anthropic sources, and Add from a repository, which syncs a plugin marketplace from a GitHub repository or Git URL.">
 
-   In a terminal:
+2. **Install a plugin.** Open the Vayaan Labs catalogue under Plugins and install the one you want.
+
+3. **Reload if needed.** If a chat was already open, run `/reload-plugins` in it. Each plugin's page, linked in the table, says what to look for.
+
+### In a terminal
+
+1. **Add the catalogue.**
 
    ```
    claude plugin marketplace add vayaan-labs/plugins
    ```
 
-2. **Install a plugin.** In the app, open the Vayaan Labs catalogue under Plugins and install it there. In a terminal, use its name from the table:
+2. **Install a plugin** by its name from the table.
 
    ```
    claude plugin install cache-maxxer@vayaan-labs
@@ -63,7 +71,7 @@ This catalogue is a list your coding agent reads so you can install our plugins 
 
 3. **Reload if needed.** If Claude Code was already open, run `/reload-plugins`. Each plugin's page, linked in the table, says what to look for.
 
-Or paste this prompt to your agent:
+### Or paste this prompt to your agent
 
 ```
 Add the Vayaan Labs plugin catalogue to Claude Code
@@ -76,7 +84,18 @@ it offers. After I choose a plugin, install it
 and tell me to run /reload-plugins.
 ```
 
-Update with `claude plugin marketplace update vayaan-labs`, then `claude plugin update <plugin>@vayaan-labs`, and run `/reload-plugins`, or tell your agent:
+## Update or remove
+
+### Update
+
+Run these two, then `/reload-plugins`:
+
+```
+claude plugin marketplace update vayaan-labs
+claude plugin update <plugin>@vayaan-labs
+```
+
+Or tell your agent:
 
 ```
 Update the vayaan-labs marketplace and every
@@ -84,12 +103,30 @@ plugin I installed from it, then tell me to
 run /reload-plugins.
 ```
 
-Remove a plugin with `claude plugin uninstall <plugin>@vayaan-labs`, or the whole catalogue with `claude plugin marketplace remove vayaan-labs`, or tell your agent:
+### Remove a plugin
+
+Run this, then `/reload-plugins`:
+
+```
+claude plugin uninstall <plugin>@vayaan-labs
+```
+
+Or tell your agent:
 
 ```
 Uninstall <plugin name>, then tell me to run
 /reload-plugins.
 ```
+
+### Remove the catalogue
+
+This also uninstalls every plugin you installed from it. Run this, then `/reload-plugins`:
+
+```
+claude plugin marketplace remove vayaan-labs
+```
+
+Or tell your agent:
 
 ```
 Remove the vayaan-labs marketplace, then tell
