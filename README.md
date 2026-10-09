@@ -81,7 +81,9 @@ claude plugin marketplace add vayaan-labs/plugins
 Check that `claude plugin marketplace list`
 shows vayaan-labs, then tell me which plugins
 it offers. After I choose a plugin, install it
-and tell me to run /reload-plugins.
+and tell me to run /reload-plugins. If the claude
+command isn't found, tell me to add the catalogue
+from the Directory instead, as the README shows.
 ```
 
 ## Update or remove
