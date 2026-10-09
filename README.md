@@ -21,9 +21,17 @@ This catalogue is a list your coding agent reads so you can install our plugins 
 
 ## Plugins
 
-| Plugin | What it does | Runs in | Install |
-| --- | --- | --- | --- |
-| [Cache Maxxer](https://github.com/vayaan-labs/cache-maxxer) | Keeps your cache warm, so you pay 96% less to re-read your conversation. Shows the time left on the cache and your hit rate, and explains every rebuild. | Claude Code, terminal and desktop app | `cache-maxxer@vayaan-labs` |
+<table>
+<thead><tr><th>Plugin</th><th>What it does</th><th>Runs in</th><th>Install</th></tr></thead>
+<tbody>
+<tr>
+<td nowrap><a href="https://github.com/vayaan-labs/cache-maxxer">Cache Maxxer</a></td>
+<td>Keeps your cache warm, so you pay 96% less to re-read your conversation. Shows the time left on the cache and your hit rate, and explains every rebuild.</td>
+<td>Claude Code, terminal and desktop app</td>
+<td nowrap><samp>cache-maxxer@vayaan-labs</samp></td>
+</tr>
+</tbody>
+</table>
 
 <p align="center">
   <img src="assets/band-desktop.png" alt="Cache Maxxer in the Claude desktop app: a large 58:08 countdown over a draining bar, a one-hour cache, hit rates of 99.91% and 99.58% with rings, and the Keep warm, Warm now, More and Hide buttons.">
