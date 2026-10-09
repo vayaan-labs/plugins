@@ -57,8 +57,9 @@ Add the Vayaan Labs plugin catalogue to Claude Code
 (https://github.com/vayaan-labs/plugins).
 Run this command:
 claude plugin marketplace add vayaan-labs/plugins
-Check that `claude plugin marketplace list` shows vayaan-labs,
-then tell me which plugins it offers.
+Check that `claude plugin marketplace list`
+shows vayaan-labs, then tell me which plugins
+it offers.
 ```
 
 Update with `claude plugin marketplace update vayaan-labs`, then `claude plugin update <plugin>@vayaan-labs`, and restart Claude Code. Remove a plugin with `claude plugin uninstall <plugin>@vayaan-labs`, or the whole catalogue with `claude plugin marketplace remove vayaan-labs`.
