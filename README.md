@@ -25,7 +25,7 @@ This catalogue is a list your coding agent reads so you can install our plugins 
 <thead><tr><th>Plugin</th><th>What it does</th><th>Runs in</th><th>Install</th></tr></thead>
 <tbody>
 <tr>
-<td nowrap><a href="https://github.com/vayaan-labs/cache-maxxer">Cache Maxxer</a></td>
+<td><a href="https://github.com/vayaan-labs/cache-maxxer">Cache Maxxer</a></td>
 <td>Keeps your cache warm, so you pay 96% less to re-read your conversation. Shows the time left on the cache and your hit rate, and explains every rebuild.</td>
 <td>Claude Code, terminal and desktop app</td>
 <td nowrap><samp>cache-maxxer@vayaan-labs</samp></td>
