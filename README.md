@@ -102,7 +102,7 @@ The catalogue is one file, `.claude-plugin/marketplace.json`, naming each plugin
 
 ## Contributing
 
-Found a problem with the catalogue? Open an issue. A problem with a plugin belongs in that plugin's own repository. Check a change to the catalogue with:
+Found a problem with the catalogue? Open an issue. A problem with a plugin belongs in that plugin's own repository. To change the catalogue, see [CONTRIBUTING.md](CONTRIBUTING.md), and check your change with:
 
 ```
 claude plugin validate --strict .claude-plugin/marketplace.json
