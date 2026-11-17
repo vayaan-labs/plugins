@@ -25,6 +25,25 @@
         "statusline",
         "token usage"
       ]
+    },
+    {
+      "name": "looks",
+      "source": {
+        "source": "github",
+        "repo": "vayaan-labs/looks"
+      },
+      "description": "Five living dark themes for the Claude desktop app's Code tab, switched with /look: Glass, Universe, Queen's Necklace, True Black and Lake, with cues for what Claude is doing and a dawn that follows the context",
+      "license": "MIT",
+      "homepage": "https://github.com/vayaan-labs/looks",
+      "keywords": [
+        "theme",
+        "dark theme",
+        "animated background",
+        "backdrop",
+        "claude desktop",
+        "claude code theme",
+        "oled"
+      ]
     }
   ]
 }

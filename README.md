@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://github.com/vayaan-labs/plugins/actions/workflows/ci.yml"><img src="https://github.com/vayaan-labs/plugins/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
-  <img src="https://img.shields.io/badge/Claude_Code-2.1.289+-d97757?style=flat-square" alt="Claude Code 2.1.289 or later">
+  <img src="https://img.shields.io/badge/Claude_Code-2.1.325+-d97757?style=flat-square" alt="Claude Code 2.1.325 or later">
   <a href="LICENSE"><img src="https://img.shields.io/github/license/vayaan-labs/plugins?style=flat-square" alt="MIT licence"></a>
   <a href="https://github.com/vayaan-labs/plugins/stargazers"><img src="https://img.shields.io/github/stars/vayaan-labs/plugins?style=flat-square" alt="GitHub stars"></a>
 </p>
@@ -30,6 +30,12 @@ This catalogue is a list your coding agent reads so you can install our plugins 
 <td>Claude Code, terminal and desktop app</td>
 <td nowrap><samp>cache-maxxer@vayaan-labs</samp></td>
 </tr>
+<tr>
+<td align="center"><a href="https://github.com/vayaan-labs/looks">Looks</a></td>
+<td>Five living dark themes behind your conversation, from a Mumbai night to an alpine lake. Each shows what Claude is doing, and two turn from night to dawn as your context fills.</td>
+<td>Claude desktop app, Code tab</td>
+<td nowrap><samp>looks@vayaan-labs</samp></td>
+</tr>
 </tbody>
 </table>
 
@@ -42,6 +48,11 @@ This catalogue is a list your coding agent reads so you can install our plugins 
   <img src="assets/band.png" alt="Cache Maxxer in a terminal: a 59:47 countdown with a draining bar, a one-hour cache, hit rates of 95.33% and 68.19%, and the Keep warm, Warm now and More buttons.">
 </p>
 <p align="center"><i>And in a terminal.</i></p>
+
+<p align="center">
+  <img src="assets/looks.png" alt="The Queen's Necklace look from Looks: Mumbai's Marine Drive at night seen from Malabar Hill, the moon over the city, the curve of lamps along the bay, frosted behind the chat column of a drawn copy of the Claude desktop app window.">
+</p>
+<p align="center"><i>Looks, with Queen's Necklace: its own scene behind a drawn copy of the app window.</i></p>
 
 ## Get started
 
